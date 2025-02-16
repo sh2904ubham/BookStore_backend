@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.static('public'))
 
 app.get("/",(req,res)=>{
-  return res.status(234).send("Welcome to Mern Stack");
+  return res.status(234).send("api testing");
 
 });
 
