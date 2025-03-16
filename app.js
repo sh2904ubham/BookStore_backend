@@ -33,7 +33,7 @@ app.post("/book", async (req, res) => {
     console.log(req.body);
     if (!req.body.title || !req.body.author || !req.body.publishYear) {
       res.status(400).json({
-        message: "Send all required fields: title, author, publishYear",
+        message: "Send all required fields",
       });
     }
     const newBook = {
